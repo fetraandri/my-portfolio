@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style du body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Animation Fade-in */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Animation Typewriter */
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is hidden until it is revealed */
+    border-right: .15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the text on a single line */
+    margin: 0 auto; /* Gives some space around the text */
+    letter-spacing: .15em; /* Adds some space between letters */
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+  
+  /* Effet de Zoom */
+  .zoom-text {
+    transition: transform 0.3s ease;
+  }
+  
+  .zoom-text:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Animation de Déplacement */
+  .move-text {
+    display: inline-block;
+    animation: moveLeftRight 5s linear infinite;
+  }
+  
+  @keyframes moveLeftRight {
+    0%, 100% {
+      transform: translateX(-10%);
+    }
+    50% {
+      transform: translateX(10%);
+    }
+  }
+  
+  /* Conteneur principal */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Footer style */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  /* Style pour l'image de fond */
+.background-image {
+    background-image: url('./assets/image_fx_.jpg'); /* Remplacez le chemin par le chemin réel de votre image */
+    background-size: cover; /* Couvre toute la zone du conteneur */
+    background-position: center center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-attachment: fixed; /* Fixe l'image en arrière-plan, pour un effet de parallaxe */
+    height: 100vh; 
+  }
+  
+  
