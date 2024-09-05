@@ -6,20 +6,17 @@
     box-sizing: border-box;
   }
   
-  /* Style du body */
-  body {
+*  body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: white;
     line-height: 1.6;
-    text-align: center;
     overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0, 0, 0);
   }
   
-  /* Animation Fade-in */
   .fade-in {
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
@@ -69,10 +66,6 @@
     transform: scale(1.1);
   }
   
-  .move-text {
-    display: inline-block;
-    animation: moveLeftRight 5s linear infinite;
-  }
   
   @keyframes moveLeftRight {
     0%, 100% {
@@ -107,18 +100,47 @@
   }
   /* Style pour l'image de fond */
 .background-image {
-    background-image: url('./assets/header-background.jpg'); /* Remplacez le chemin par le chemin réel de votre image */
-    background-size: cover; /* Couvre toute la zone du conteneur */
-    background-position: center center; /* Centre l'image */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    background-attachment: fixed; /* Fixe l'image en arrière-plan, pour un effet de parallaxe */
+    background-image: url('./assets/image_fx_\ \(1\).jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
     height: 100vh; 
+    position: relative;
+    overflow: hidden; /* Assure que les éléments animés ne dépassent pas les bords */
+    animation: fadeInBackground 2s ease-in-out;
+  }
+  
+  @keyframes fadeInBackground {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @supports (perspective: 1px) {
+    .background-image::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: inherit;
+      background-size: inherit;
+      background-position: inherit;
+      background-repeat: inherit;
+      transform: translateZ(-1px) scale(2);
+      z-index: -1;
+    }
   }
   .typewriter {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    font-size: clamp(40px, 5vw, 90px); /* Ajuste la taille du texte */
+    font-size: clamp(40px, 5vw, 90px); 
     animation: showup 7s infinite, reveal 7s infinite, slidein 7s infinite;
   }
   .typewriter-text {

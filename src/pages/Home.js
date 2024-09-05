@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const Home = () => {
   useEffect(() => {
     const aText = [
-      "Je suis Fetra Tanjona,"
+      "Je suis Fetra Tanjona, "
     ];
     const iSpeed = 100; 
-    let iIndex = 0; // 
+    let iIndex = 0; 
     let iArrLength = aText[0].length; 
     const iScrollAt = 20; 
 
@@ -37,12 +38,12 @@ const Home = () => {
 
     typewriter(); 
   }, []); 
-
+  
   return (
-    <div className="background-image">
-      <div className="container">
-        <div id="typedtext" className="typewriter-text"></div>
-        <p className="fade-in">Un développeur frontend passionné par la création d'interfaces utilisateur intuitives et esthétiques. Avec une expertise en React et une maîtrise des technologies web modernes, je transforme des concepts en expériences interactives captivantes. Mon objectif est de construire des applications fluides et réactives qui répondent aux besoins des utilisateurs.</p>
+    <div className="background-image d-flex justify-content-center align-items-center min-vh-100">
+      <div className="container text-center">
+        <div id="typedtext" className="typewriter-text mb-4"></div>
+        <p className="fade-in mb-4">Un développeur frontend passionné par la création d'interfaces utilisateur intuitives et esthétiques. Avec une expertise en React et une maîtrise des technologies web modernes, je transforme des concepts en expériences interactives captivantes. Mon objectif est de construire des applications fluides et réactives qui répondent aux besoins des utilisateurs.</p>
         <p className="zoom-text">Découvrez mon travail en parcourant les différentes sections.</p>
       </div>
     </div>
