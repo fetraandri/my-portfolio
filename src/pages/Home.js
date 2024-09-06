@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
+import { SocialIcon } from 'react-social-icons';
 
 const Home = () => {
   useEffect(() => {
     const aText = [
-      "Je suis Fetra Tanjona, "
+      "Je suis Fetra, "
     ];
     const iSpeed = 100; 
     let iIndex = 0; 
@@ -40,11 +41,17 @@ const Home = () => {
   }, []); 
   
   return (
-    <div className="background-image d-flex justify-content-center align-items-center min-vh-100">
+    <div className="background-image d-flex flex-column justify-content-center align-items-center min-vh-100">
       <div className="container text-center">
         <div id="typedtext" className="typewriter-text mb-4"></div>
         <p className="fade-in mb-4">Un développeur frontend passionné par la création d'interfaces utilisateur intuitives et esthétiques. Avec une expertise en React et une maîtrise des technologies web modernes, je transforme des concepts en expériences interactives captivantes. Mon objectif est de construire des applications fluides et réactives qui répondent aux besoins des utilisateurs.</p>
         <p className="zoom-text">Découvrez mon travail en parcourant les différentes sections.</p>
+        <div className="social-icons mt-4">
+          <SocialIcon url="https://github.com/fetraandri" target="_blank" className="mx-2" />
+          <SocialIcon url="https://linkedin.com/in/Fetra_Andriamamonjy" target="_blank" className="mx-2" />
+          <SocialIcon url="https://facebook.com/fetra.andriami.77" target="_blank" className="mx-2" />
+          <SocialIcon url="https://instagram.com/andriamamonjy_fetrra" target="_blank" className="mx-2" />
+        </div>
       </div>
     </div>
   );
