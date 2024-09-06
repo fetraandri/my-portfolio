@@ -1,0 +1,66 @@
+/* pages/styles/Contact.css */
+.contact-page {
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .backgroundContact {
+    background-image: url('../../assets/ordi.jpg'); /* Assure-toi que le chemin est correct */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Assure que les éléments animés ne dépassent pas les bords */
+    animation: zoomInBackground 5s ease-in-out, fadeInBackground 2s ease-in-out;
+  }
+  
+  @keyframes fadeInBackground {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomInBackground {
+    0% {
+      transform: scale(1.1); /* L'image commence légèrement agrandie */
+    }
+    100% {
+      transform: scale(1); /* L'image revient à sa taille normale */
+    }
+  }
+  
+  .social-icons {
+    margin-top: 2rem;
+    position: relative;
+    z-index: 2; 
+  }
+  
+  .contact-form-container {
+    position: relative;
+    z-index: 2;
+    padding: 1.5rem; 
+    border-radius: 10px;
+    margin-top: 2rem; 
+    max-width: 500px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contact-form-container .form-control {
+    padding: 0.5rem; 
+  }
+  
+  .contact-form-container textarea {
+    height: 100px; 
+  }
+  
+  .btn-primary {
+    padding: 0.5rem 1rem; 
+    font-size: 0.9rem;
+  }

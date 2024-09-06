@@ -8,7 +8,6 @@
   
 *  body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
     color: white;
     line-height: 1.6;
     overflow: hidden;
@@ -100,7 +99,7 @@
   }
   /* Style pour l'image de fond */
 .background-image {
-    background-image: url('./assets/image_fx_\ \(1\).jpg'); 
+    background-image: url('./assets/hack.jpg'); 
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat; 
