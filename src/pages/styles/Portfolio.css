@@ -21,4 +21,44 @@
   .icon {
     font-size: 3rem;
   }
+.portfolio-background {
+    background-image: url('../../assets/hack.jpg'); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+  }
+  
+  /* Titre stylé */
+  .portfolio-title {
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  /* Icône des cartes */
+ 
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(50px); 
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+  }
+  
   

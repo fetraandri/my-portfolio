@@ -13,12 +13,12 @@ const skills = [
   },
   {
     title: 'React',
-    description: 'Bibliothèque JavaScript pour construire des interfaces utilisateur dynamiques et réactives.',
+    description: 'Des mini projets comme "To Do list" , et autres application avec next.js comme"Sentiment Detector" ',
     icon: <FaReact size={40} color="#61dafb" />
   },
   {
     title: 'React Native',
-    description: 'Framework pour développer des applications mobiles natives en utilisant JavaScript et React.',
+    description: 'Creation et maintenance de code :application "Passion Campagne" du site : "https://www.passion-campagne.projets-omega.net/',
     icon: <FaReact size={40} color="#61dafb" />
   },
   {
@@ -40,20 +40,22 @@ const skills = [
 
 const Portfolio = () => {
   return (
-    <div className="container mt-5">
-      <h1 className="text-center mb-4 animated-title">Skills</h1> {/* Titre stylé et animé */}
-      <div className="row">
-        {skills.map((skill, index) => (
-          <div className="col-md-4 mb-4" key={index}>
-            <Card>
-              <Card.Body className="text-center">
-                <div className="icon mb-3">{skill.icon}</div> {/* Icône de chaque langage */}
-                <Card.Title>{skill.title}</Card.Title>
-                <Card.Text>{skill.description}</Card.Text>
-              </Card.Body>
-            </Card>
-          </div>
-        ))}
+    <div className="portfolio-background">
+      <div className="container mt-5">
+        <h1 className="text-center mb-4 portfolio-title">Skills</h1>
+        <div className="row">
+          {skills.map((skill, index) => (
+            <div className="col-md-4 mb-4 fade-in" key={index} style={{ animationDelay: `${index * 0.2}s` }}>
+              <Card>
+                <Card.Body className="text-center">
+                  <div className="icon mb-3">{skill.icon}</div>
+                  <Card.Title>{skill.title}</Card.Title>
+                  <Card.Text>{skill.description}</Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
