@@ -1,0 +1,24 @@
+.animated-title {
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Icône des cartes */
+  .icon {
+    font-size: 3rem;
+  }
+  

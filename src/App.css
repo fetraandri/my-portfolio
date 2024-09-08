@@ -97,7 +97,6 @@
     margin: 0;
     font-size: 14px;
   }
-  /* Style pour l'image de fond */
 .background-image {
     background-image: url('./assets/hack.jpg'); 
     background-size: cover; 
@@ -106,7 +105,7 @@
     background-attachment: fixed; 
     height: 100vh; 
     position: relative;
-    overflow: hidden; /* Assure que les éléments animés ne dépassent pas les bords */
+    overflow: hidden; 
     animation: fadeInBackground 2s ease-in-out;
   }
   
