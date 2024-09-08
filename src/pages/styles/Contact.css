@@ -13,7 +13,7 @@
     background-attachment: fixed;
     height: 100vh;
     position: relative;
-    overflow: hidden; 
+    overflow: auto; 
     animation: zoomInBackground 5s ease-in-out, fadeInBackground 2s ease-in-out;
   }
   

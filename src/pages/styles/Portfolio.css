@@ -22,7 +22,7 @@
     font-size: 3rem;
   }
 .portfolio-background {
-    background-image: url('../../assets/hack.jpg'); 
+    background-image: url('../../assets/backgroundportfolio.jpg'); 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -33,13 +33,48 @@
     overflow: auto;
   }
   
-  /* Titre stylé */
-  .portfolio-title {
+  .portfolio-title, .experience-title {
     font-size: 3rem;
     text-align: center;
     color: #fff;
     margin-bottom: 2rem;
+    padding-bottom: 0.5rem; /* Espace pour la bordure */
+    position: relative; /* Pour positionner la bordure stylisée */
   }
+  
+  .portfolio-title::after, .experience-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0; 
+    width: 50%; 
+    height: 5px; 
+    background: #fff; 
+    transform: translateX(-50%); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .portfolio-title:hover::after, .experience-title:hover::after {
+    background: #f0f0f0; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); 
+  }
+  
+  .skills-section, .experiences-section {
+    margin-bottom: 3cm; 
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
   
   /* Icône des cartes */
  
@@ -60,5 +95,45 @@
       transform: translateY(0); 
     }
   }
+  .experience-card {
+    text-align: center;
+  }
+  .experience-card img {
+    border-radius: 50%;
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover;
+    margin: auto;
+  }
+  /* Carte avec effet 3D */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform-style: preserve-3d;
+    position: relative;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+  }
+  
+  .card:hover {
+    transform: rotateY(10deg) rotateX(10deg); 
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .card-body {
+    backface-visibility: hidden; 
+  }
+  
+  
+  .experience-card img {
+    transition: transform 0.3s;
+    border-radius: 50%; 
+  }
+  
+  .experience-card img:hover {
+    transform: scale(1.05); 
+  }
+  
+  
+  
   
   

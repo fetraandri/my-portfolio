@@ -10,7 +10,7 @@
     font-family: 'Arial', sans-serif;
     color: white;
     line-height: 1.6;
-    overflow: hidden;
+    overflow: auto;
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
     -webkit-transform: translate3d(0, 0, 0);
