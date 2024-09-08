@@ -1,19 +1,19 @@
-/* pages/styles/Contact.css */
 .contact-page {
-    text-align: center;
-    padding: 2rem;
-    position: relative;
-  }
+  text-align: right; 
+  padding: 2rem;
+  position: relative;
+}
+
   
   .backgroundContact {
-    background-image: url('../../assets/ordi.jpg'); /* Assure-toi que le chemin est correct */
+    background-image: url('../../assets/imagecontacts.jpg'); 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
     position: relative;
-    overflow: hidden; /* Assure que les éléments animés ne dépassent pas les bords */
+    overflow: hidden; 
     animation: zoomInBackground 5s ease-in-out, fadeInBackground 2s ease-in-out;
   }
   
@@ -28,29 +28,34 @@
   
   @keyframes zoomInBackground {
     0% {
-      transform: scale(1.1); /* L'image commence légèrement agrandie */
+      transform: scale(1.1); 
     }
     100% {
-      transform: scale(1); /* L'image revient à sa taille normale */
+      transform: scale(1); 
     }
   }
   
-  .social-icons {
+  .social_icon_contact {
     margin-top: 2rem;
-    position: relative;
-    z-index: 2; 
+    display: flex;
+    justify-content: flex-end; 
+    gap: 10px; 
+    margin-right:3cm;
   }
   
   .contact-form-container {
     position: relative;
     z-index: 2;
-    padding: 1.5rem; 
+    padding: 1.5rem;
     border-radius: 10px;
-    margin-top: 2rem; 
-    max-width: 500px; 
+    margin-top: 2rem;
+    max-width: 500px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0; 
+    text-align: right; 
   }
+  
+  
   
   .contact-form-container .form-control {
     padding: 0.5rem; 
@@ -64,3 +69,13 @@
     padding: 0.5rem 1rem; 
     font-size: 0.9rem;
   }
+  .form-group input,
+.form-group textarea {
+  width: 100%; 
+  text-align: left; }
+
+.form-group label {
+  text-align: left; 
+  display: block;
+  margin-bottom: 0.5rem;
+}

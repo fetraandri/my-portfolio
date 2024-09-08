@@ -14,7 +14,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     const serviceID = 'service_b22gwap';
-    const templateID = 'template_j8vqmoa';
+    const templateID = 'template_tc5dfhb';
     const userID = 'iXEoJwv95GqkcnECZ';
 
     const templateParams = {
@@ -48,6 +48,7 @@ const ContactForm = () => {
               onChange={handleChange}
               required
               className="form-control"
+              placeholder="Nom..."
             />
           </div>
           <div className="form-group">
@@ -59,6 +60,7 @@ const ContactForm = () => {
               onChange={handleChange}
               required
               className="form-control"
+              placeholder='Email'
             />
           </div>
           <div className="form-group">
@@ -70,6 +72,7 @@ const ContactForm = () => {
               required
               className="form-control"
               rows="5"
+              placeholder="message..."
             ></textarea>
           </div>
           <button type="submit" className="btn btn-primary">Envoyer</button>

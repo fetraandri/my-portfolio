@@ -9,7 +9,7 @@ const Contact = () => {
     <div className="backgroundContact">
       <div className="contact-page">
         <ContactForm />
-        <div className="social-icons">
+        <div className="social_icon_contact">
         <SocialIcon url="https://github.com/fetraandri" target="_blank" className="mx-2" />
           <SocialIcon url="https://linkedin.com/in/Fetra_Andriamamonjy" target="_blank" className="mx-2" />
           <SocialIcon url="https://facebook.com/fetra.andriami.77" target="_blank" className="mx-2" />
