@@ -66,7 +66,7 @@ const experiences = [
   {
     company: 'R@NDEVTEAM',
     logo: logoRandev,
-    tasks: 'Pendant le stage : Mise à jour de l\'SDK de l\'application Android, maintenance du code de l\'application Android en React Native pendant 3 mois, et publication de l\'application.'
+    tasks: 'STAGE : Mise à jour de l\'SDK de l\'application Android, maintenance du code de l\'application Android en React Native pendant 3 mois, et publication de l\'application sur playstore.  '
   }
 ];
 
