@@ -42,7 +42,7 @@ function About() {
       </div>
 
       <div className="skills">
-        <h2 className="skills-title">Compétences</h2>
+        <h2 className="skills-title">Skills Progréssions</h2>
         <SkillBar skill="JavaScript" percentage={90} />
         <SkillBar skill="React" percentage={85} />
         <SkillBar skill="React Native" percentage={80} />
