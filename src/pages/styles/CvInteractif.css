@@ -1,0 +1,17 @@
+.cv-page {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+  }
+  
+  .cv-page h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  iframe {
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  

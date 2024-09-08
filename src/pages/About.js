@@ -2,6 +2,8 @@ import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import './styles/About.css';
 import profileImage from '../pages/styles/profil/profile.jpg';
+import DownloadCV from '../components/DownloadCV';
+
 
 const SkillBar = ({ skill, percentage }) => {
   const props = useSpring({
@@ -46,6 +48,7 @@ function About() {
         <SkillBar skill="React Native" percentage={80} />
         <SkillBar skill="Java Spring Boot" percentage={75} />
       </div>
+      <DownloadCV />
     </div>
   );
 }
