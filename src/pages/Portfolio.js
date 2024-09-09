@@ -75,9 +75,9 @@ const Portfolio = () => {
   return (
     <div className="portfolio-background">
       <div className="container mt-5">
-        {/* Section Skills */}
+        {/* Section Projets */}
         <div className="skills-section">
-          <h1 className="text-center mb-4 portfolio-title">Skills</h1>
+          <h1 className="text-center mb-4 portfolio-title">Projets</h1>
           <Row>
             {skills.map((skill, index) => (
               <Col md={4} key={index} className="mb-4 fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
