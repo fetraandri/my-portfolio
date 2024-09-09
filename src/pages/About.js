@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import './styles/About.css';
-import profileImage from '../pages/styles/profil/profile.jpg';
+import Profilpro from '../pages/styles/profil/Profilpro.jpg';
 import DownloadCV from '../components/DownloadCV';
 
 
@@ -29,7 +29,7 @@ function About() {
     <div className="background-about">
       <div className="about-container">
         <div className="profile-section">
-          <img src={profileImage} alt="Profile" className="profile-image" />
+          <img src={Profilpro} alt="Profile" className="profile-image" />
           <p className="profile-name">Fetra ANDRIAMAMONJY</p>
           <p className="email">hei.fetra@gmail.com</p>
         </div>
@@ -42,7 +42,7 @@ function About() {
       </div>
 
       <div className="skills">
-        <h2 className="skills-title">Skills Progréssions</h2>
+        <h2 className="skills-title">Skills</h2>
         <SkillBar skill="JavaScript" percentage={90} />
         <SkillBar skill="React" percentage={85} />
         <SkillBar skill="React Native" percentage={80} />
