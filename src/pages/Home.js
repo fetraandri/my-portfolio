@@ -5,7 +5,7 @@ import { SocialIcon } from 'react-social-icons';
 const Home = () => {
   useEffect(() => {
     const aText = [
-      "Je suis Fetra, "
+      "Je suis Fetra Andriamamonjy, "
     ];
     const iSpeed = 100; 
     let iIndex = 0; 
@@ -44,8 +44,9 @@ const Home = () => {
     <div className="background-image d-flex flex-column justify-content-center align-items-center min-vh-100">
       <div className="container text-center">
         <div id="typedtext" className="typewriter-text mb-4"></div>
-        <p >Un développeur frontend passionné par la création d'interfaces utilisateur intuitives et esthétiques. Avec une expertise en React et une maîtrise des technologies web modernes, je transforme des concepts en expériences interactives captivantes. Mon objectif est de construire des applications fluides et réactives qui répondent aux besoins des utilisateurs.</p>
-        <p className="zoom-text">Découvrez mon travail en parcourant les différentes sections.</p>
+        <div className="text-container fade-ing">
+          <p>Un développeur frontend passionné par la création d'interfaces utilisateur intuitives et esthétiques. Avec une expertise en React et une maîtrise des technologies web modernes, je transforme des concepts en expériences interactives captivantes. Mon objectif est de construire des applications fluides et réactives qui répondent aux besoins des utilisateurs.</p>
+        </div>        <p className="zoom-text">Découvrez mon travail en parcourant les différentes sections.</p>
         <div className="social-icons mt-4">
           <SocialIcon url="https://github.com/fetraandri" target="_blank" className="mx-2" />
           <SocialIcon url="https://linkedin.com/in/Fetra_Andriamamonjy" target="_blank" className="mx-2" />
