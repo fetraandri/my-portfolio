@@ -1,5 +1,8 @@
 import React from 'react';
-import './styles/Footer.css'; // Ajoute le fichier de style
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import './styles/Footer.css'; 
 
 const Footer = () => {
   return (
@@ -7,25 +10,32 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <h4>Contactez-moi</h4>
-          <p>Email: hei.fetra@gmail.com</p>
-          <p>Téléphone: +261 38 26 612 72<br/>
-                        +261 32 40 788 33
-          </p>
+          <p><FontAwesomeIcon icon={faEnvelope} /> Email: hei.fetra@gmail.com</p>
+          <p><FontAwesomeIcon icon={faPhone} /> Téléphone: +261 38 26 612 72<br />
+                        +261 32 40 788 33</p>
         </div>
 
         <div className="footer-section">
-          <h4>Suivez-moi</h4>
+          <h4>Suivez-moi: <br /></h4>
           <div className="social-icon">
-            <a href="https://github.com/fetra-tanjona" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/fetra-tanjona" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://facebook.com/fetra.tanjona" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://instagram.com/fetra_tanjona" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://github.com/fetraandri" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+            </a>
+            <a href="https://linkedin.com/in/fetra-tanjona" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
+            <a href="https://www.facebook.com/fetra.andriami.77" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faFacebook} size="2x" />
+            </a>
+            <a href="https://instagram.com/andriamamonjy_fetrra" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </a>
           </div>
         </div>
 
         <div className="footer-section">
           <h4>Localisation</h4>
-          <p>Antananarivo, Madagascar , </p>
+          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Antananarivo, Madagascar</p>
         </div>
       </div>
 
