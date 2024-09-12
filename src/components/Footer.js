@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-content">
-        <div className="footer-section">
+        <div className="footer-section contact-section">
           <h4>Contactez-moi</h4>
           <p><FontAwesomeIcon icon={faEnvelope} /> Email: hei.fetra@gmail.com</p>
           <p><FontAwesomeIcon icon={faPhone} /> Téléphone: +261 38 26 612 72<br />
@@ -16,15 +16,15 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h4>Suivez-moi: <br /></h4>
+          <h4>Suivez-moi</h4>
           <div className="social-icon">
             <a href="https://github.com/fetraandri" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
-            <a href="https://linkedin.com/in/fetra-tanjona" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/Fetra_Andriamamonjy" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
-            <a href="https://www.facebook.com/fetra.andriami.77" target="_blank" rel="noopener noreferrer">
+            <a href="https://facebook.com/fetra.andriami.77" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
             <a href="https://instagram.com/andriamamonjy_fetrra" target="_blank" rel="noopener noreferrer">
@@ -35,7 +35,7 @@ const Footer = () => {
 
         <div className="footer-section">
           <h4>Localisation</h4>
-          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Antananarivo, Madagascar</p>
+          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Antananarivo, Madagascar <br /> Sabotsy/Namehana andrefantsena</p>
         </div>
       </div>
 
