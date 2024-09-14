@@ -21,7 +21,7 @@ const Footer = () => {
             <a href="https://github.com/fetraandri" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
-            <a href="https://linkedin.com/in/Fetra_Andriamamonjy" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/fetra-tanjona-a00375329" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
             <a href="https://facebook.com/fetra.andriami.77" target="_blank" rel="noopener noreferrer">
