@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
-import './styles/Header.css'
+import { FaHome, FaUserAlt, FaBriefcase, FaEnvelope } from 'react-icons/fa';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './styles/Header.css';
 
 function Header() {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">Mon Portfolio</Link>
           <button
@@ -24,16 +25,16 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/">Accueil</Link>
+                <Link className="nav-link" to="/"><FaHome /> Accueil</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">À propos</Link>
+                <Link className="nav-link" to="/about"><FaUserAlt /> À propos</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/portfolio">Portfolio</Link>
+                <Link className="nav-link" to="/portfolio"><FaBriefcase /> Portfolio</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">Contact</Link>
+                <Link className="nav-link" to="/contact"><FaEnvelope /> Contact</Link>
               </li>
             </ul>
           </div>
