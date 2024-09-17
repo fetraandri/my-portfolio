@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
-Sitemap:https://my-portfolio-rust-eta-30.vercel.app/sitemap.xml
+Sitemap:https://my-portfolio-rust-eta-30.vercel.app/sitemap_4447867.xml
