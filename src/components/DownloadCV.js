@@ -3,7 +3,7 @@ import './styles/DownloadCV.css';
 
 function DownloadCV() {
   const handleDownload = () => {
-    window.open('https://drive.google.com/uc?export=download&id=12Qfr7of9UKfu-KQt-oMHYHaSe-Rs8siU', '_blank');
+    window.open('https://drive.google.com/file/d/1ygq_vJcfLZnD-UalCbWEtuoCW-mtejiN/view?usp=sharing', '_blank');
   };
 
   return (

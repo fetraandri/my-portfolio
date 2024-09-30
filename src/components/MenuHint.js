@@ -20,7 +20,6 @@ function MenuHint({ top, left }) {
   const [showHint, setShowHint] = useState(true);
 
   useEffect(() => {
-    // Masquer l'indication après 5 secondes
     const timer = setTimeout(() => {
       setShowHint(false);
     }, 5000);

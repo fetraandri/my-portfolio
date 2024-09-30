@@ -1,9 +1,8 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import './styles/About.css';
-import Profilpro from '../pages/styles/profil/Profilpro.jpg';
+import LargeImage from '../pages/styles/profil/profilepro.png'; 
 import DownloadCV from '../components/DownloadCV';
-
 
 const SkillBar = ({ skill, percentage }) => {
   const props = useSpring({
@@ -27,28 +26,32 @@ const SkillBar = ({ skill, percentage }) => {
 function About() {
   return (
     <div className="background-about">
-      <div className="about-container">
-        <div className="profile-section">
-          <img src={Profilpro} alt="Profile" className="profile-image" />
-          <p className="profile-name">Fetra ANDRIAMAMONJY</p>
-          <p className="email">hei.fetra@gmail.com</p>
+      <div className="about-content">
+        <div className="image-section">
+          <img src={LargeImage} alt="Large" className="large-image" />
+          <div className="author-info">
+            <h2>Fetra ANDRIAMAMONJY</h2>
+            <p>hei.fetra@gmail.com</p>
+          </div>
         </div>
         <div className="text-section">
           <h1>À propos de moi</h1>
           <p>
-          Je suis étudiant en 3ème année chez HEI, où j'ai acquis des connaissances approfondies en INFORMATIQUE. Mes études m'ont fourni une solide base en programmation, que j'ai appliquée dans ma carrière professionnelle.
+            Je suis actuellement étudiant en troisième année à l'Institut HEI, spécialisé en informatique, où j'ai acquis une expertise solide dans plusieurs domaines technologiques.
+            Mon parcours académique m'a permis de maîtriser les principes fondamentaux du développement logiciel, ainsi que des compétences avancées en programmation. 
+            Grâce à des projets concrets, j'ai pu appliquer ces connaissances théoriques dans un cadre professionnel, renforçant ainsi ma capacité à résoudre des problématiques complexes.
+            Mon expérience inclut également une familiarité avec les technologies émergentes, notamment en développement web et mobile. Avec cette formation et ma passion pour l'innovation, je me prépare activement à relever les défis de l'industrie informatique.
           </p>
+          <div className="skills">
+            <h2 className="skills-title">Skills</h2>
+            <SkillBar skill="JavaScript" percentage={90} />
+            <SkillBar skill="React" percentage={85} />
+            <SkillBar skill="React Native" percentage={80} />
+            <SkillBar skill="Java Spring Boot" percentage={75} />
+          </div>
+          <DownloadCV />
         </div>
       </div>
-
-      <div className="skills">
-        <h2 className="skills-title">Skills</h2>
-        <SkillBar skill="JavaScript" percentage={90} />
-        <SkillBar skill="React" percentage={85} />
-        <SkillBar skill="React Native" percentage={80} />
-        <SkillBar skill="Java Spring Boot" percentage={75} />
-      </div>
-      <DownloadCV />
     </div>
   );
 }

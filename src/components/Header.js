@@ -21,7 +21,6 @@ const pulse = keyframes`
   }
 `;
 
-// Animation pour le texte
 const fadeInOut = keyframes`
   0% {
     opacity: 0;
@@ -177,7 +176,7 @@ function Header() {
         onTouchStart={handleTouchStart}
         onClick={handleClick}
       >
-        {}
+        {/* Remplacer les barres par des icônes Font Awesome */}
         <FontAwesomeIcon icon={click ? faTimes : faBars} />
       </MenuLabel>
 
