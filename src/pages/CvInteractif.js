@@ -6,7 +6,7 @@ function CvInteractif() {
     <div className="cv-page">
       <h1>Mon CV Interactif</h1>
       <iframe
-        src="https://drive.google.com/file/d/12Qfr7of9UKfu-KQt-oMHYHaSe-Rs8siU/preview"
+        src="https://drive.google.com/file/d/1CvVxlhWtO0oOAr-1lqYL41eWJMHfLTqI/preview"
         title="CV de Fetra"
         width="100%"
         height="800px"
