@@ -37,10 +37,10 @@ function About() {
         <div className="text-section">
           <h1>À propos de moi</h1>
           <p>
-            Je suis actuellement étudiant en troisième année à l'Institut HEI, spécialisé en informatique, où j'ai acquis une expertise solide dans plusieurs domaines technologiques.
-            Mon parcours académique m'a permis de maîtriser les principes fondamentaux du développement logiciel, ainsi que des compétences avancées en programmation. 
-            Grâce à des projets concrets, j'ai pu appliquer ces connaissances théoriques dans un cadre professionnel, renforçant ainsi ma capacité à résoudre des problématiques complexes.
-            Mon expérience inclut également une familiarité avec les technologies émergentes, notamment en développement web et mobile. Avec cette formation et ma passion pour l'innovation, je me prépare activement à relever les défis de l'industrie informatique.
+          J'ai été étudiant à l'Institut HEI (Haute École d'Informatique), où j'ai finalisé ma soutenance en spécialisation informatique, acquérant une expertise solide dans plusieurs domaines technologiques.
+Mon parcours académique m'a permis de maîtriser les principes fondamentaux du développement logiciel, ainsi que d'acquérir des compétences avancées en programmation.
+Grâce à des projets concrets, j'ai pu appliquer ces connaissances théoriques dans un cadre professionnel, renforçant ainsi ma capacité à résoudre des problématiques complexes.
+Mon expérience inclut également une familiarité avec les technologies émergentes, notamment en développement web et mobile. Avec cette formation et ma passion pour l'innovation, je me prépare activement à relever les défis de l'industrie informatique.
           </p>
           <div className="skills">
             <h2 className="skills-title">Skills</h2>
